@@ -11,7 +11,7 @@ final class UsingKeyPathsInResultBuilderTests: XCTestCase {
 
     @KeyPathBuilder<A>
     var keyPath: KeyPath<A, String> {
-        \A.value
+        \.value
     }
 
     func test() throws {
